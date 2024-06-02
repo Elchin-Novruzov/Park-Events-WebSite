@@ -1,0 +1,20 @@
+import React from 'react'
+import { memo } from 'react';
+
+const TicketBanner = ({ src, title, dec }) => {
+    return (
+            <section id='ticket-set'>
+                <div className="ticket-banner">
+                    <img src={src} alt="" />
+                    <div className="banner-title">
+                        <p>{title}</p>
+                        <span>
+                            {dec}
+                        </span>
+                    </div>
+                </div>
+            </section>
+    )
+}
+
+export default memo(TicketBanner)
